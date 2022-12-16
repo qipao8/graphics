@@ -11,5 +11,7 @@ module.exports = {
         "parser": "@babel/eslint-parser",
         "requireConfigFile": false,
     },
-    "rules": {},
+    "rules": {
+        "vue/multi-word-component-names": 0
+    },
 }
