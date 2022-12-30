@@ -2,7 +2,7 @@ import Vue from "vue"
 import VueRouter from "vue-router"
 
 const Home = () => import(/* webpackChunkName: "Home" */`../pages/Home.vue`)
-const Login = () => import(/* webpackChunkName: "UserLogin" */`../pages/User/Login.vue`)
+const Login = () => import(/* webpackChunkName: "UserLogin" */`../pages/User/Login/Login.vue`)
 
 Vue.use(VueRouter)
 
