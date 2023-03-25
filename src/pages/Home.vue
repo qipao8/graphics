@@ -1,21 +1,25 @@
 <template>
   <div class="layo">
     <div class="nav">导航栏有空再补充</div>
-    <div class="main">
-      <sortable-vue></sortable-vue>
-      <downhtml></downhtml>
-    </div>
+    <div class="main"></div>
   </div>
 </template>
 
 <script>
-import sortableVue from "../components/sortable.vue"
-import Downhtml from "../components/Downhtml.vue"
 export default {
   name: "HomePage",
-  components: {
-    sortableVue,
-    Downhtml,
+  components: {},
+  created() {
+    fetch("http://localhost:4000/api/getJSON", {
+      method: "POST",
+      body: {
+        test: "lmtest",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res)
+      })
   },
 }
 </script>

@@ -3,9 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "serve": "vue-cli-service serve",
+        "dev": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "serve": "node ./server/index"
     },
     "dependencies": {
         "core-js": "^3.8.3",
@@ -24,6 +25,10 @@
         "eslint": "^7.32.0",
         "eslint-plugin-vue": "^8.0.3",
         "husky": "^8.0.3",
+        "koa": "^2.14.1",
+        "koa-bodyparser": "^3.2.0",
+        "koa-router": "^7.4.0",
+        "koa2-cors": "^2.0.6",
         "lint-staged": "^13.2.0",
         "node-sass": "^8.0.0",
         "prettier": "^2.8.6",
