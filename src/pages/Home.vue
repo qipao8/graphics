@@ -1,5 +1,5 @@
 <template>
-  <div class="layo">
+  <div class="Layout">
     <div class="nav">导航栏有空再补充</div>
     <div class="main"></div>
   </div>
@@ -23,4 +23,7 @@ export default {
   },
 }
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.Layout {
+}
+</style>

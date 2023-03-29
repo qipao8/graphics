@@ -3,7 +3,7 @@ import VueRouter from "vue-router"
 
 const Home = () => import(/* webpackChunkName: "Home" */ `../pages/Home.vue`)
 const Login = () =>
-  import(/* webpackChunkName: "UserLogin" */ `../pages/User/Login/Login.vue`)
+  import(/* webpackChunkName: "UserLogin" */ `../pages/User/Login.vue`)
 const sortable = () =>
   import(/* webpackChunkName: "SortTable" */ `../components/sortable.vue`)
 
