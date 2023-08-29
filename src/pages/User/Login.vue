@@ -35,6 +35,7 @@ export default {
   methods: {
     login() {
       postUserLogin({ ...this.loginForm }).then((res) => {
+        console.log(res)
         if (res.data === "success") {
           alert(res.message)
         }

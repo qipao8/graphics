@@ -1,12 +1,13 @@
 // fetch请求使用记录
-const baseUrl = "http://127.0.0.1:4000"
+const baseUrl = "https://shiny-fiesta-65qwr4vv7gwfr7pq-4000.app.github.dev"
 export function postUserLogin(params) {
   fetch(baseUrl + "/api/postLogin", {
     method: "POST",
     body: JSON.stringify(params),
     mode: "cors",
     headers: {
-      "content-type": "application/json",
+        "content-type": "application/json",
+        'Access-Control-Allow-Origin': '*'
     },
   })
     .then((response) => response.json())
@@ -19,6 +20,7 @@ export function postUserLogin(params) {
     mode: "cors",
     headers: {
       "content-type": "application/json",
+      'Access-Control-Allow-Origin': '*'
     },
   })
     .then((response) => response.json())
